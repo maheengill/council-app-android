@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreActivity">
+
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="openUserDetails"
+        android:src="@drawable/ic_user"
+        android:layout_alignParentTop="true">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/userDetails"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/userImg"
+        android:gravity="center_vertical"
+
+        android:onClick="openUserDetails"
+        android:text="My details"
+        android:textSize="22sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/myReportsImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/userImg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="getReports"
+        android:src="@drawable/ic_report">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/myReports"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/userDetails"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/myReportsImg"
+        android:gravity="center_vertical"
+        android:onClick="getReports"
+        android:text="My Reports"
+        android:textSize="22sp">
+
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/phoneImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/myReportsImg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="clickPhone"
+        android:src="@drawable/ic_phone">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/phoneTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/myReports"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/phoneImg"
+        android:gravity="center_vertical"
+        android:onClick="clickPhone"
+        android:text="Call us"
+        android:textSize="22sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/socialsImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneImg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="getSocials"
+        android:src="@drawable/ic_web">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/socials"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneImg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/socialsImg"
+        android:gravity="center_vertical"
+        android:onClick="getSocials"
+        android:text="Social media links"
+        android:textSize="22sp">
+
+    </TextView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickPhone"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_nav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeNav"
+        android:title="HOME"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/reportNav"
+        android:title="REPORT IT"
+        android:icon="@drawable/ic_report"/>
+
+    <item
+        android:id="@+id/newsNav"
+        android:title="NEWS"
+        android:icon="@drawable/ic_news"/>
+
+    <item
+        android:id="@+id/moreNav"
+        android:title="MORE"
+        android:icon="@drawable/ic_more"/>
+
+</menu>

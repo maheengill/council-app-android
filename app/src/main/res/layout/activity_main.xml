@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/main_backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/issue"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_centerHorizontal="true"
+        android:text="HELP MAKE KIRKLEES BETTER"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/main_backgroundImage"
+    android:layout_above="@id/bottomNav">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_below="@id/main_backgroundImage"
+        android:layout_marginTop="15dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="reportIssues"
+            app:cardCornerRadius="11dp"
+            app:cardElevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/issue_icon_main">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="Report It"
+                    android:textSize="19sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="getNews"
+            app:cardCornerRadius="11dp"
+            app:cardElevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/news_icon_main">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="News"
+                    android:textSize="19sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="getRecyclePoints"
+            app:cardCornerRadius="11dp"
+            app:cardElevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/recycle">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="Recycling"
+                    android:textSize="19sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="getBinsWebView"
+            app:cardCornerRadius="11dp"
+            app:cardElevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bin">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="Bins"
+                    android:textSize="19sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/black"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_nav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

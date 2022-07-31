@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="textCapSentences">
+
+
+    </EditText>
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_below="@+id/firstName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:inputType="textCapSentences">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastName"
+        android:hint="Username">
+        
+    </EditText>
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password">
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/reTypePassword"
+        android:layout_below="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Re-enter Password">
+        
+    </EditText>
+    
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_below="@id/reTypePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register">
+
+    </Button>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_below="@id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an Account?">
+
+    </Button>
+
+
+</RelativeLayout>
